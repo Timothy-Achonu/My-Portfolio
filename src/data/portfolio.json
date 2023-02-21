@@ -1,0 +1,52 @@
+{
+    "portfolio" : [
+        {
+            "cover": "/portfolio/1/one.PNG",
+            "title": "Quiz Trivia",
+            "description" : "React, JSX, CSS",
+            "url" : "https://timothy-achonu.github.io/React-Quiz-Trivia/"
+        },
+        {
+            "cover": "/portfolio/2/two.PNG",
+            "title": "Tenzies Game",
+            "description" : "React, JSX, CSS",
+            "url" : "https://timothy-achonu.github.io/Tenzies-Game/"
+        },
+        {
+            "cover": "/portfolio/3/three.PNG",
+            "title": "Leaderboard",
+            "description" : "React, JSX, CSS",
+            "url" : "https://interns-leaderboard.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/4/four.PNG",
+            "title": "Conectar",
+            "description" : "React, JSX, CSS, React router",
+            "url" : "https://connect-with-people.timothyachonu.repl.co/"
+        },
+        {
+            "cover": "/portfolio/5/five.PNG",
+            "title": "Flexia Landing Page",
+            "description" : "React, JSX, CSS",
+            "url" : "https://timothy-achonu.github.io/Flixia-Landing-Page/"
+        },
+        {
+            "cover": "/portfolio/6/six.PNG",
+            "title": "Phonie",
+            "description" : "HTML, CSS, JS",
+            "url" : "https://timothy-achonu.github.io/Phonie-Project/"
+        },
+        {
+            "cover": "/portfolio/7/seven.PNG",
+            "title": "Calculator",
+            "description" : "React, JSX, CSS",
+            "url" : "https://react-calculator-app-beige.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/8/eight.PNG",
+            "title": "Quiz Site",
+            "description" : "HTML, CSS, JS",
+            "url" : "https://timothy-achonu.github.io/Quiz-Site/"
+        }
+    ]
+}

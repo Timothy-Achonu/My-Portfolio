@@ -1,10 +1,10 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+// import LogoS from '../../assets/images/logo-s.png'
+// import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { FontAwesomeIcon } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
   faLinkedin,
@@ -29,6 +29,14 @@ const Sidebar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4dde" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="porfolio-link"
+          to="/portfolio"
+        >
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4dde" />
         </NavLink>
         <NavLink
           exact="true"

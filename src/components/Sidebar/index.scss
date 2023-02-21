@@ -81,12 +81,18 @@
             content: 'ABOUT';
         }
     }
-
+    
     a.contact-link {
         &::after {
             content: 'CONTACT';
         }
     }
+    a.porfolio-link {
+      &::after {
+          content: 'PROJECTS';
+      }
+  }
+
 
     a.active {
         svg {

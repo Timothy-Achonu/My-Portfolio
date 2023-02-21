@@ -13,11 +13,14 @@ const Contact = () => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
-
+  //If you are having trouble getting the name, email 
+  //address, and message to show up when testing EmailJS, 
+  //make sure that your template email variables match the 
+  //form variable names in your Contact.js file
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs.sendForm(
-      'service_r9twcqu', 
+      'default_service', 
       'template_jnl7kh7', 
       refForm.current,
       'OM3G0kWvhzkT7r6jH',
