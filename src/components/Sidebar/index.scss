@@ -52,52 +52,51 @@
         }
 
         &::after {
-            opacity: 1;
+          opacity: 1;
         }
       }
 
       &::after {
-         content: '';
-         font-size: 9px;
-         letter-spacing: 2px;
-         position: absolute;
-         bottom: 0;
-         display: block;
-         width: 100%;
-         text-align: center;
-         opacity: 0;
-         transition: all 0.3s ease-out;
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
       }
 
       &:first-child {
         &::after {
-            content: 'HOME';
+          content: 'HOME';
         }
       }
     }
 
     a.about-link {
-        &::after {
-            content: 'ABOUT';
-        }
+      &::after {
+        content: 'ABOUT';
+      }
     }
-    
+
     a.contact-link {
-        &::after {
-            content: 'CONTACT';
-        }
+      &::after {
+        content: 'CONTACT';
+      }
     }
     a.porfolio-link {
       &::after {
-          content: 'PROJECTS';
+        content: 'PROJECTS';
       }
-  }
-
+    }
 
     a.active {
-        svg {
-            color: #ffd700;
-        }
+      svg {
+        color: #ffd700;
+      }
     }
   }
 
@@ -112,17 +111,72 @@
     margin: 0;
 
     li {
-        a {
-            padding: 7px 0;
-            display: block;
-            font-size: 15px;
-            line-height: 16px;
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
 
-            &:hover svg {
-                color: #ffd700;
-            }
+        &:hover svg {
+          color: #ffd700;
         }
+      }
     }
   }
+}
 
+.hamburger-icon {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    ul, nav {
+      display: none;
+    }
+
+    nav {
+      height: 100%;
+      width: 100%;
+      background-color: #181818;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 20;
+      margin: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a::after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+      a svg {
+        opacity: 1 !important;
+      }
+
+      &.mobile-show {
+        display: block;
+      }
+    }
+
+    .hamburger-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 2;
+    }
+  }
 }
