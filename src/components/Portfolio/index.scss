@@ -25,7 +25,8 @@
         height: 400px;
         overflow: hidden;
         border-radius: 10px;
-        max-width: calc(25% - 10px);
+        max-width: calc(50% - 10px);
+        // width: 50%;
 
         .portfolio-image {
             position: absolute;
@@ -107,6 +108,26 @@
         &:hover .content {
             bottom: 0;
             background: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h1.page-title {
+            margin-left: 20px;
+            margin-top: 60px;
+        }
+
+        .image-box {
+            height: 200px !important;
+            flex: 1 1 100%;
+            max-width: calc(50% - 10px) !important;
         }
     }
 }
