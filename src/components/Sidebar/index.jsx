@@ -11,7 +11,7 @@ import {
   faHome,
   faSuitcase,
   faUser,
-  faClose
+  faClose,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faTwitter,
@@ -28,10 +28,16 @@ const Sidebar = () => {
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link> */}
       <nav className={`${showNav ? 'mobile-show' : ''}`}>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+          onClick={() => setShowNav(false)}
+          exact="true"
+          activeclassname="active"
+          to="/"
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4dde" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="about-link"
@@ -40,6 +46,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faUser} color="#4d4dde" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="porfolio-link"
@@ -48,6 +55,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faSuitcase} color="#4d4dde" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="contact-link"
@@ -61,7 +69,7 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
           color="#ffd700"
           size="3x"
-
+          className="close-icon"
         />
       </nav>
       <ul>

@@ -125,8 +125,8 @@
   }
 }
 
-.hamburger-icon {
-  display: block;
+.hamburger-icon, .close-icon {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -171,7 +171,7 @@
       }
     }
 
-    .hamburger-icon {
+    .hamburger-icon, .close-icon {
       display: block;
       position: absolute;
       top: 15px;

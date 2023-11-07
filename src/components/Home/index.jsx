@@ -23,8 +23,7 @@ const Home = () => {
     'o',
     'p',
     'e',
-    'r',
-    '.'
+    'r.',
   ]
 
   useEffect(() => {
