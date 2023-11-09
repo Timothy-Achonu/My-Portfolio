@@ -38,14 +38,10 @@ const About = () => {
             the frontend extends beyond coding – it's about making digital
             experiences exceptional for end-users
           </p>
+          <p>Skills:</p>
           <p>
-            I'm consciencious, naturally curious, and perpetually working on
-            improving my developer, collaborating and communication skills.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a
-            trustworthy, football fanatic, tech enthusiat that loves listening
-            to self development podcasts.
+            HTML, JAVASCRIPT, TYPESCRIPT, REACT, GIT AND GITHUB, CSS, TAILWIND, SASS, VUEJS
+            NEXTJS, ETC
           </p>
         </div>
 
